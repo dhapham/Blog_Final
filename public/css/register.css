@@ -1,0 +1,81 @@
+.register-title {
+  text-align: center;
+  margin: auto;
+}
+
+.register-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.register-container {
+  width: 500px;
+  /* height: 500px; */
+  border: 2px solid brown;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.form-register {
+  text-align: center;
+}
+
+.form-input-register-group {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-input-register-group label {
+  color: brown;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.form-input-register-group input {
+  min-width: 65%;
+  background-color: transparent;
+  border: 1px solid rosybrown;
+  border-radius: 5px;
+  padding: 10px;
+  color: brown;
+  font-size: 16px;
+}
+
+.form-input-register-group input:focus {
+  outline: 2px solid brown;
+}
+
+.form-register-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.button-register {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid brown;
+  border-radius: 5px;
+  color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 16px;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.button-register:hover {
+  background-color: brown;
+  color: white;
+  transition: all 0.1s linear;
+}

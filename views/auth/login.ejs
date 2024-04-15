@@ -1,0 +1,28 @@
+<%- include('../partials/head.ejs') %>
+
+    <body>
+        <h1 class="login-title">Login | <a href="/">Home</a></h1>
+        <div class="login-container">
+            <form action="/auth/login" method="POST" class="form-login">
+                <div class="form-input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+                <div class="form-input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" />
+                </div>
+                <% if (error) { %>
+                    <div class="error">
+                        <%= error %>
+                    </div>
+                    <% } %>
+                        <div class="form-login-button">
+                            <button type="submit" class="button button-login">Login</button>
+                            <a href="/auth/register" class="button">Register</a>
+                        </div>
+            </form>
+        </div>
+    </body>
+
+    <%- include("../partials/foot.ejs") %>

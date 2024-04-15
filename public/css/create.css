@@ -1,0 +1,30 @@
+.form-create-input-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-create-input-group input,
+.form-create-input-group textarea {
+  width: 100%;
+  padding: 6px 0;
+  border: none;
+  border-bottom: 1px solid brown;
+  background-color: transparent;
+  color: brown;
+}
+
+.form-create-input-group input:focus,
+.form-create-input-group textarea:focus {
+  outline: none;
+}
+
+.form-create-input-group input::placeholder,
+.form-create-input-group textarea::placeholder {
+  color: rosybrown;
+  font-style: italic;
+}
+
+.form-create-button-group {
+  width: 100%;
+  text-align: right;
+}

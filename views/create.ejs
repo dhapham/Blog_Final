@@ -1,0 +1,36 @@
+<%- include('partials/head.ejs') %>
+
+    <body>
+        <div class="page-header">
+            <h1>Create</h1>
+            <div class="page-action">
+                <a href="/auth/logout" class="button button-logout">Home</a>
+                <a href="/auth/logout" class="button button-logout">Logout</a>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div style="padding: 10px; width: 100%;">
+                <form action="/create" method="POST" id="form-create" enctype="multipart/form-data">
+                    <div class="form-create-input-group">
+                        <input type="text" name="headline" id="headline" placeholder="Headline" required>
+                    </div>
+                    <div class="form-create-input-group">
+                        <input type="text" name="sub" id="sub" placeholder="Sub" required>
+                    </div>
+                    <div class="form-create-input-group">
+                        <input type="file" name="picture" id="picture" placeholder="Picture" accept=".jpg,.jpeg,.png"
+                            required>
+                    </div>
+                    <div class="form-create-input-group">
+                        <textarea form="form-create" name="content" id="content" placeholder="Content" rows="10"
+                            required></textarea>
+                    </div>
+                    <div class="form-create-button-group">
+                        <button type="submit" class="button button-save">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <%- include("partials/foot.ejs") %>
